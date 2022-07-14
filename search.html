@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="search.css" />
+  </head>
+  <body>
+    <div class="main">
+    <div class="navbar">
+      <ul>
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#">VIDEOS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">LOGIN</a></li>
+          
+      </ul>
+  </div>
+  <div class="info">
+      <div class="head">
+          <h1>PLAYGROUNG MANAGEMENT <span>SYSTEM</span></h1>
+      
+      </div>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search Turf name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Thiruvalla')">
+          Thiruvalla
+        </button>
+        <button class="button-value" onclick="filterProduct('Kottayam')">
+          Kottayam
+        </button>
+        <button class="button-value" onclick="filterProduct('Alapuzha')">
+          Alapuzha
+        </button>
+        <button class="button-value" onclick="filterProduct('Erankulam')">
+          Erankulam
+        </button>
+      </div>
+      <div id="products">
+        
+      </div>
+      
+    </div>
+  </div>
+    <!-- Script -->
+    
+  <script src="search.js"></script>
+
+
+  </body>
+</html>
